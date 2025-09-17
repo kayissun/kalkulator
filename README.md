@@ -1,6 +1,6 @@
 # Kalkulator Sederhana
 <img src="screenshoot.png" alt="preview web">
-<a href="index.html">DEMO</a>
+<a href="https://kayissun.github.io/kalkulator/">DEMO</a>
 
 ## Description
 Kalkulator Sederhana adalah aplikasi web berbasis **frontend-only** yang dibangun menggunakan HTML, CSS, dan vanilla JavaScript. Aplikasi ini dirancang untuk melakukan operasi aritmetika dasar seperti penjumlahan, pengurangan, perkalian, pembagian, persen, dan toggle tanda positif/negatif. Tampilan UI dibuat minimalis, responsif, dan mudah digunakan.
