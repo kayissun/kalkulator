@@ -1,0 +1,68 @@
+<!--
+Project: Kalkulator Sederhana (Frontend only)
+Files included in this single document:
+- index.html
+- style.css
+- script.js
+
+Cara pakai:
+1. Salin masing-masing bagian ke file dengan nama yang sama (index.html, style.css, script.js).
+2. Buka index.html di browser (double-click atau drag ke browser).
+
+Catatan: Ini menggunakan vanilla JavaScript, tanpa backend atau routing.
+-->
+
+<!-- ========== index.html ========== -->
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Icon -->
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <main class="calculator" role="application" aria-label="Kalkulator Sederhana">
+      <header class="calc-header">
+        <h1>Kalkulator</h1>
+        <p class="subtitle">HTML • CSS • JavaScript (Vanilla)</p>
+      </header>
+
+      <section class="display" id="display" aria-live="polite">0</section>
+
+      <div class="kbd-grid">
+        <!-- First row -->
+        <button class="btn btn-fn" data-action="clear">C</button>
+        <button class="btn btn-fn" data-action="toggle-sign">±</button>
+        <button class="btn btn-fn" data-action="percent">%</button>
+        <button class="btn btn-op" data-action="/">÷</button>
+
+        <!-- Numbers and dot -->
+        <button class="btn" data-num="7">7</button>
+        <button class="btn" data-num="8">8</button>
+        <button class="btn" data-num="9">9</button>
+        <button class="btn btn-op" data-action="*">×</button>
+
+        <button class="btn" data-num="4">4</button>
+        <button class="btn" data-num="5">5</button>
+        <button class="btn" data-num="6">6</button>
+        <button class="btn btn-op" data-action="-">−</button>
+
+        <button class="btn" data-num="1">1</button>
+        <button class="btn" data-num="2">2</button>
+        <button class="btn" data-num="3">3</button>
+        <button class="btn btn-op" data-action="+">+</button>
+
+        <button class="btn btn-zero" data-num="0">0</button>
+        <button class="btn" data-num=".">.</button>
+        <button class="btn btn-eq" data-action="=">=</button>
+      </div>
+
+      <footer class="credits">Dibuat oleh Kayis • Demo lokal</footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
